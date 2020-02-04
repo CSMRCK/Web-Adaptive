@@ -1,0 +1,83 @@
+//main: style.less
+
+.banner__inner {
+  display: flex;
+  padding-top: 10.6rem;
+  padding-bottom: 8rem;
+  position: relative;
+  background: url("../images/ipad.png") right bottom no-repeat;
+  @media @notebook{
+
+    background: url("../images/ipad.png") right no-repeat;
+    background-size: 70%;
+  }
+  @media @tablet {
+    background: url("../images/ipad.png") right no-repeat;
+    background-size: 60%;
+  }
+  @media @mobile{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: none;
+  }
+}
+
+.banner_content {
+  width: 50%;
+  @media @mobile-sm {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 3.8rem;
+    color: @black;
+    font-weight: 100;
+
+    @media @tablet {
+      font-size: 2.5rem;
+    }
+  }
+
+  h2 {
+    font-size: 2.8rem;
+    color: @black;
+    font-weight: 100;
+    @media @tablet {
+      font-size: 1.5rem;
+
+    }
+  }
+}
+
+.video {
+  width: 204px;
+  height: 39px;
+  margin: 1rem 0;
+}
+
+.video__inner {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: @dark;
+  color: @white;
+  padding: 0.5rem 0;
+  transition: all .3s linear;
+  &:hover{
+    box-shadow: 5px 5px 10px @black;
+  }
+
+  img {
+    padding-right: 1rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+}

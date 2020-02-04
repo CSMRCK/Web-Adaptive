@@ -1,0 +1,31 @@
+//main: style.less
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+  @media @tablet {
+    width: 450px;
+  }
+  @media @mobile {
+    display: none;
+  }
+
+  a {
+    padding: 10px 20px;
+    position: relative;
+    font-size: 1.43rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: @black;
+    transition: background .3s ease-in;
+
+    @media @tablet {
+      font-size: 1.3rem;
+    }
+
+    &:hover {
+      color: @white;
+      background: @dark;
+    }
+  }
+}

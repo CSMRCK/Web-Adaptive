@@ -1,0 +1,59 @@
+//main: style.less
+.post{
+  padding-top: 100px;
+}
+.main{
+  display: flex;
+  @media @tablet{
+    flex-direction: column;
+  }
+  img{
+    width: 100%;
+    @media @tablet{
+      padding-bottom: 1rem;
+      margin: 0 2rem;
+      max-width: 200px;
+      max-height: 200px;
+    }
+  }
+}
+.main__info{
+  margin: 0 2rem;
+  h3{
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+  p{
+    margin: 1rem 0;
+  }
+}
+.secondary{
+  padding-top: 50px;
+  display: flex;
+  div{
+    padding: 0 1rem;
+  }
+  .box1{
+    flex: 1;
+  }
+  .box2{
+    flex: 2;
+  }
+  .box3{
+    flex: 2;
+  }
+  h4{
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  label{
+    padding-top: 1rem;
+    color: @gray;
+  }
+  p{
+    padding-top: 1rem;
+  }
+  @media @mobile{
+    flex-direction: column;
+  }
+}
